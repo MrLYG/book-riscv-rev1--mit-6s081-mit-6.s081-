@@ -8,7 +8,7 @@
 
 如图1.1所示，xv6采用了传统的内核形式，一个给运行中程序提供服务的特殊程序。每个运行的程序，称之为进程，包含指令、数据和栈的内存。指令实现了程序的计算。数据是计算动作所使用到的变量。栈组织程序的执行调用。一个典型的计算机有很多进程，但是只有一个内核。
 
-![Untitled](Chapter%201%20%2079f05/Untitled.png)
+![Untitled](../img/c1_1.png)
 
 当一个进程需要去调用内核服务时，他会调用系统调用，系统调用是操作系统接口调用的其中之一。系统调用进入到内核；内核执行服务然后返回。因此一个进程在用户空间和内核空间交替执行。（用户空间也称用户态，内核空间-内核态）
 
@@ -18,7 +18,7 @@
 
 图1.2列出了所有xv6的系统调用
 
-![Untitled](Chapter%201%20%2079f05/Untitled%201.png)
+![Untitled](../img/c1_2.png)
 
 图1.2：xv6系统调用（除非另外声明，这些系统调用返回0表示无误，返回-1表示出错）
 
@@ -26,6 +26,8 @@
 
 Shell是一个普通程序，它从用户那里读取命令并执行它们。shell是一个用户程序，并不是内核的一部分，这个事实说明了系统调用接口的强大：shell并没有什么特别的地方。这也意味着shell是非常容易被替代的；因此，现代Unix系统有多种shell可供选择，每种shell都有自己的用户界面和脚本特性。xv6 shell是对Unix Bourne shell精华部分的简单实现。它的实现可以在（[xv6-riscv/sh.c at riscv · mit-pdos/xv6-riscv (github.com)](https://github.com/mit-pdos/xv6-riscv/blob/riscv//user/sh.c#L1)）找到。
 
-[1.1 Processes and memory](Chapter%201%20%2079f05/1%201%20Proces%20360f1.md)
+[1.1 Processes and memory](https://www.notion.so/1-1-Processes-and-memory-360f1142a94a4e79916836cfaa810f3f)
 
-[1.2 I/O and File descriptors](Chapter%201%20%2079f05/1%202%20I%20O%20an%2005a00.md)
+[1.2 I/O and File descriptors](https://www.notion.so/1-2-I-O-and-File-descriptors-05a00ab45f9a4bfb8fe8a6aafae7ba00)
+
+[1.3 Pipes（管道）](https://www.notion.so/1-3-Pipes-1dba7a0387ac451fb7eeae4b8b653441)
