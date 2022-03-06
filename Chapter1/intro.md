@@ -26,7 +26,7 @@
 
 Shell是一个普通程序，它从用户那里读取命令并执行它们。shell是一个用户程序，并不是内核的一部分，这个事实说明了系统调用接口的强大：shell并没有什么特别的地方。这也意味着shell是非常容易被替代的；因此，现代Unix系统有多种shell可供选择，每种shell都有自己的用户界面和脚本特性。xv6 shell是对Unix Bourne shell精华部分的简单实现。它的实现可以在（[xv6-riscv/sh.c at riscv · mit-pdos/xv6-riscv (github.com)](https://github.com/mit-pdos/xv6-riscv/blob/riscv//user/sh.c#L1)）找到。
 
-[1.1 Processes and memory](/1-1Processes%20and%20memory.md)
+[1.1 Processes and memory](1-1Processes%20and%20memory.md)
 
 [1.2 I/O and File descriptors](https://www.notion.so/1-2-I-O-and-File-descriptors-05a00ab45f9a4bfb8fe8a6aafae7ba00)
 
