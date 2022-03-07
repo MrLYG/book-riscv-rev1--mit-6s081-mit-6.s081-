@@ -8,4 +8,4 @@ Xv6在多核RISC-V微处理器上运行，它的许多底层功能（例如，�
 
 一台完整的计算机中的CPU被支持硬件所包围，其中大部分是以I/O接口的形式存在。Xv6是为qemu的"-machine virt "选项所模拟的支持硬件编写的。这包括RAM、包含启动代码的ROM、与用户键盘/屏幕的串行连接，以及用于存储的磁盘。
 
-[2.1 Abstracting physical resources](/2-1%20Abstracting%20physical%20resources.md)
+[2.1 Abstracting physical resources](2-1%20Abstracting%20physical%20resources.md)
