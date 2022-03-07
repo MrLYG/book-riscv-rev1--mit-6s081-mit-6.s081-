@@ -7,3 +7,5 @@
 Xv6在多核RISC-V微处理器上运行，它的许多底层功能（例如，它的进程实现）是专门针对RISC-V的。RISC-V是一个64位的CPU，xv6是用 "LP64 "C语言编写的，这意味着C编程语言中的long（L）和指针（P）是64位的，但int是32位的。本书假设读者已经在一些架构上做了一些机器级的编程，并将在出现RISC-V特定的想法时引入。RISC-V的一个有用的参考资料是 "The RISC-V Reader: An Open Architecture Atlas" [David Patterson and Andrew Waterman. The RISC-V Reader: an open architecture Atlas. Strawberry Canyon, 2017.]The user-level ISA[[https://riscv.org/specifications/isa-spec-pdf/](https://riscv.org/specifications/isa-spec-pdf/)]和the privileged architecture[The RISC-V instruction set manual: privileged architecture. [[https://riscv.org/specifications/privileged-isa/](https://riscv.org/specifications/privileged-isa/)]是官方规范。
 
 一台完整的计算机中的CPU被支持硬件所包围，其中大部分是以I/O接口的形式存在。Xv6是为qemu的"-machine virt "选项所模拟的支持硬件编写的。这包括RAM、包含启动代码的ROM、与用户键盘/屏幕的串行连接，以及用于存储的磁盘。
+
+[2.1 Abstracting physical resources](/2-1%20Abstracting%20physical%20resources.md)
